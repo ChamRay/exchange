@@ -1,0 +1,68 @@
+syntax = "proto3";
+package ex;
+
+enum Side {
+  BUY = 0;
+  SELL = 1;
+}
+enum Tif {
+  GTC = 0;
+  IOC = 1;
+  FOK = 2;
+}
+
+message NewOrder {
+  string client_order_id = 1;
+  string symbol = 2;
+  Side side = 3;
+  int64 price = 4;   // tick-scaled (e.g. price*1e4)
+  int64 quantity = 5;
+  Tif tif = 6;
+  string account = 7;
+  int64 ts_ns = 8;
+}
+
+message CancelOrder {
+  string client_order_id = 1;
+  string symbol = 2;
+  string account = 3;
+  int64 ts_ns = 4;
+}
+message AmendOrder  {
+  string client_order_id = 1;
+  string symbol = 2;
+  int64 new_qty = 3;
+  int64 ts_ns = 4;
+}
+message Ack {
+  string client_order_id = 1;
+  string engine_order_id = 2;
+}
+message Reject {
+  string client_order_id = 1;
+  string reason = 2;
+}
+message Trade {
+  string symbol = 1;
+  string buy_order_id = 2;
+  string sell_order_id = 3;
+  int64 price = 4;
+  int64 quantity = 5;
+  int64 seq = 6;
+  int64 ts_ns = 7;
+}
+
+message Inbound {
+  oneof payload {
+    NewOrder new_order = 1;
+    CancelOrder cancel = 2;
+    AmendOrder amend = 3;
+  }
+}
+message Outbound {
+  oneof payload {
+    Ack ack = 1;
+    Reject reject = 2;
+    Trade trade = 3;
+  }
+}
