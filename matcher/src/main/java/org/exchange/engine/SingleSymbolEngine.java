@@ -1,5 +1,6 @@
 package org.exchange.engine;
 
+import com.google.gson.Gson;
 import ex.Ex.*;
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectRBTreeMap;
@@ -7,10 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.exchange.book.OrderBook;
 import org.w3c.dom.Node;
 
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
@@ -269,25 +267,13 @@ public final class SingleSymbolEngine implements OrderBook {
 
     @Override
     public void snapshotTo() {
-        try {
-            // 1. 构造快照对象（可以自定义 Snapshot 类）
-            Snapshot snapshot = new Snapshot(book.bids, book.asks);
-
-            // 2. 序列化成字节数组
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            ObjectOutputStream oos = new ObjectOutputStream(bos);
-            oos.writeObject(snapshot);
-            oos.flush();
-
-            byte[] snapshotBytes = bos.toByteArray();
-
-            // 3. 持久化到文件（也可以存 Kafka / DB）
-            try (FileOutputStream fos = new FileOutputStream("orderbook.snapshot")) {
-                fos.write(snapshotBytes);
-            }
-
-            log.info("订单簿快照生成成功，大小={} 字节", snapshotBytes.length);
-
+        try (FileWriter writer = new FileWriter("orderbook.json")) {
+            Gson gson = new Gson();
+            Map<String, Object> snapshot = Map.of(
+                    "bids", book.bids,
+                    "asks", book.asks
+            );
+            gson.toJson(snapshot, writer);
         } catch (Exception e) {
             log.error("生成快照失败", e);
         }
@@ -325,18 +311,4 @@ public final class SingleSymbolEngine implements OrderBook {
         this.sender.accept(outbound);
     }
 
-
-    public class Snapshot implements Serializable {
-        private final Long2ObjectRBTreeMap<ArrayDeque<PriceLevels.Node>> bids;
-        private final Long2ObjectRBTreeMap<ArrayDeque<PriceLevels.Node>> asks;
-
-        public Snapshot(Long2ObjectRBTreeMap<ArrayDeque<PriceLevels.Node>> bids,
-                        Long2ObjectRBTreeMap<ArrayDeque<PriceLevels.Node>> asks) {
-            this.bids = bids;
-            this.asks = asks;
-        }
-
-        public Long2ObjectRBTreeMap<ArrayDeque<PriceLevels.Node>> getBids() { return bids; }
-        public Long2ObjectRBTreeMap<ArrayDeque<PriceLevels.Node>> getAsks() { return asks; }
-    }
 }

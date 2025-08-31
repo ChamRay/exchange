@@ -22,10 +22,11 @@ public class OderBookTest {
         Ex.NewOrder sellOrder = newBuyOrder("22222",TRANS_SYMBOL,10,10);
         Ex.Inbound sellInbound = newInbound(sellOrder);
         orderBook.onNew(sellInbound);
-
+        orderBook.snapshotTo();
         Ex.NewOrder buyOrder = newSellOrder("11111",TRANS_SYMBOL,10,11);
         Ex.Inbound buyInbound = newInbound(buyOrder);
         orderBook.onNew(buyInbound);
+        orderBook.snapshotTo();
     }
 
     private static Ex.Inbound newInbound(Ex.NewOrder sellOrder) {
