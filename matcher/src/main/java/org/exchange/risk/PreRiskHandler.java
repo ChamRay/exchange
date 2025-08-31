@@ -1,13 +1,12 @@
 package org.exchange.risk;
 
-import com.lmax.disruptor.EventHandler;
 import ex.Ex;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import org.exchange.engine.EngineBus;
+import lombok.extern.slf4j.Slf4j;
 
-import static ex.Ex.Inbound.PayloadCase.NEW_ORDER;
 
+@Slf4j
 public class PreRiskHandler extends ChannelInboundHandlerAdapter {
 
     @Override
@@ -23,7 +22,7 @@ public class PreRiskHandler extends ChannelInboundHandlerAdapter {
             case NEW_ORDER -> {
                 Ex.NewOrder newOrder = inbound.getNewOrder();
                 if (newOrder.getPrice() <= 0 || newOrder.getQuantity() <= 0) {
-                    System.out.println("风险订单被拦截: " + newOrder.getClientOrderId());
+                    log.info("风险订单被拦截: {}" , newOrder.getClientOrderId());
                     passed = false;
                 }
             }
@@ -36,7 +35,7 @@ public class PreRiskHandler extends ChannelInboundHandlerAdapter {
                 // 可选风控
             }
             case PAYLOAD_NOT_SET -> {
-                System.out.println("无效消息");
+                log.debug("无效消息");
                 passed = false;
             }
         }

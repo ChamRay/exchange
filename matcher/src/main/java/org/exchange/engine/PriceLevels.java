@@ -1,16 +1,27 @@
 package org.exchange.engine;
 
+import ex.Ex;
 import it.unimi.dsi.fastutil.longs.Long2ObjectRBTreeMap;
 
 import java.util.ArrayDeque;
 
 final class PriceLevels {
+
+
     // 卖盘升序，买盘降序（买盘存负价或改比较器）
-    final Long2ObjectRBTreeMap<ArrayDeque<Node>> bids, asks;
+
+    // 买单簿
+    final Long2ObjectRBTreeMap<ArrayDeque<Node>> bids;
+    // 卖单簿
+    final Long2ObjectRBTreeMap<ArrayDeque<Node>> asks;
 
     static final class Node {
-        String oid;
-        long qty; /* 链接/引用省略 */
+        String orderId;
+        long price;
+        long qty; // 订单剩余数量
+        Ex.Side side;
+        String account;
+        Ex.Tif tif;
     }
 
     PriceLevels() {

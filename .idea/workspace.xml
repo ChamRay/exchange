@@ -1,15 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e20aae3-75eb-4564-a400-2bceedae9398" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/org/exchange/InboundCodec.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/exchange/InboundCodec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/EngineBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/EngineBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/OrderBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/book/OrderBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/PriceLevels.java" beforeDir="false" afterPath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/PriceLevels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/SingleSymbolEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/SingleSymbolEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/risk/PreRiskHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/matcher/src/main/java/org/exchange/risk/PreRiskHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protocol/src/main/java/ex/Ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/protocol/src/main/java/ex/Ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protocol/src/main/proto/ex.proto" beforeDir="false" afterPath="$PROJECT_DIR$/protocol/src/main/proto/ex.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/src/main/java/org/exchange/FileChannelWal.java" beforeDir="false" afterPath="$PROJECT_DIR$/storage/src/main/java/org/exchange/FileChannelWal.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="threads" value="100C" />
         <option name="userSettingsFile" value="D:\WorkSpace\tools\maven\apache-maven-3.9.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
-  }
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
 }</component>
+  <component name="ProjectId" id="31jBwFFtu67zTmdnWYHYzG6dnQF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.OderBookTest.test.executor": "Debug",
+    "Maven.exchange [clean].executor": "Run",
+    "Maven.exchange [install].executor": "Run",
+    "Maven.exchange [package].executor": "Run",
+    "Maven.exchange [verify].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/WorkSpace/CodeSpace/exchange/matcher/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\CodeSpace\exchange\matcher\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OderBookTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="matcher" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.exchange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.exchange" />
+      <option name="MAIN_CLASS_NAME" value="org.exchange.OderBookTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OderBookTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e20aae3-75eb-4564-a400-2bceedae9398" name="Changes" comment="" />
+      <created>1756027837938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756027837938</updated>
+      <workItem from="1756027839908" duration="22320000" />
+      <workItem from="1756554637385" duration="13825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/matcher/src/main/java/org/exchange/engine/SingleSymbolEngine.java</url>
+          <line>222</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>

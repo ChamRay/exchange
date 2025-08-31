@@ -6,7 +6,7 @@ import ex.Ex.Inbound;
 public final class EngineBus {
 
     // 不可变数据载体
-    public class Slot {
+    public static class Slot {
         public Inbound msg;
     }
 

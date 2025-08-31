@@ -33,7 +33,7 @@ public final class FileChannelWal implements Wal {
     }
 
     public WalCursor replay(long from) {
-        return new WalCursor(()->ch, from);
+        return new WalCursor(() -> ch, from);
     }
 
     public void close() throws Exception {

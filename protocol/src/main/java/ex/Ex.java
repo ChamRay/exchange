@@ -16,6 +16,10 @@ public final class Ex {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * 交易方向
+   * </pre>
+   *
    * Protobuf enum {@code ex.Side}
    */
   public enum Side
@@ -124,19 +128,32 @@ public final class Ex {
   }
 
   /**
+   * <pre>
+   * Time In Force 订单的有效期策略
+   * </pre>
+   *
    * Protobuf enum {@code ex.Tif}
    */
   public enum Tif
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
+     * <pre>
+     * </pre>
+     *
      * <code>GTC = 0;</code>
      */
     GTC(0),
     /**
+     * <pre>
+     * </pre>
+     *
      * <code>IOC = 1;</code>
      */
     IOC(1),
     /**
+     * <pre>
+     * </pre>
+     *
      * <code>FOK = 2;</code>
      */
     FOK(2),
@@ -144,14 +161,23 @@ public final class Ex {
     ;
 
     /**
+     * <pre>
+     * </pre>
+     *
      * <code>GTC = 0;</code>
      */
     public static final int GTC_VALUE = 0;
     /**
+     * <pre>
+     * </pre>
+     *
      * <code>IOC = 1;</code>
      */
     public static final int IOC_VALUE = 1;
     /**
+     * <pre>
+     * </pre>
+     *
      * <code>FOK = 2;</code>
      */
     public static final int FOK_VALUE = 2;
@@ -257,11 +283,19 @@ public final class Ex {
         getClientOrderIdBytes();
 
     /**
+     * <pre>
+     * 交易品种代码
+     * </pre>
+     *
      * <code>string symbol = 2;</code>
      * @return The symbol.
      */
     java.lang.String getSymbol();
     /**
+     * <pre>
+     * 交易品种代码
+     * </pre>
+     *
      * <code>string symbol = 2;</code>
      * @return The bytes for symbol.
      */
@@ -290,6 +324,10 @@ public final class Ex {
     long getPrice();
 
     /**
+     * <pre>
+     * 单位 按最小交易单位计量
+     * </pre>
+     *
      * <code>int64 quantity = 5;</code>
      * @return The quantity.
      */
@@ -307,11 +345,19 @@ public final class Ex {
     ex.Ex.Tif getTif();
 
     /**
+     * <pre>
+     * 账户
+     * </pre>
+     *
      * <code>string account = 7;</code>
      * @return The account.
      */
     java.lang.String getAccount();
     /**
+     * <pre>
+     * 账户
+     * </pre>
+     *
      * <code>string account = 7;</code>
      * @return The bytes for account.
      */
@@ -319,12 +365,20 @@ public final class Ex {
         getAccountBytes();
 
     /**
+     * <pre>
+     * ns时间戳
+     * </pre>
+     *
      * <code>int64 ts_ns = 8;</code>
      * @return The tsNs.
      */
     long getTsNs();
   }
   /**
+   * <pre>
+   * 新订单
+   * </pre>
+   *
    * Protobuf type {@code ex.NewOrder}
    */
   public static final class NewOrder extends
@@ -407,6 +461,10 @@ public final class Ex {
     @SuppressWarnings("serial")
     private volatile java.lang.Object symbol_ = "";
     /**
+     * <pre>
+     * 交易品种代码
+     * </pre>
+     *
      * <code>string symbol = 2;</code>
      * @return The symbol.
      */
@@ -424,6 +482,10 @@ public final class Ex {
       }
     }
     /**
+     * <pre>
+     * 交易品种代码
+     * </pre>
+     *
      * <code>string symbol = 2;</code>
      * @return The bytes for symbol.
      */
@@ -478,6 +540,10 @@ public final class Ex {
     public static final int QUANTITY_FIELD_NUMBER = 5;
     private long quantity_ = 0L;
     /**
+     * <pre>
+     * 单位 按最小交易单位计量
+     * </pre>
+     *
      * <code>int64 quantity = 5;</code>
      * @return The quantity.
      */
@@ -508,6 +574,10 @@ public final class Ex {
     @SuppressWarnings("serial")
     private volatile java.lang.Object account_ = "";
     /**
+     * <pre>
+     * 账户
+     * </pre>
+     *
      * <code>string account = 7;</code>
      * @return The account.
      */
@@ -525,6 +595,10 @@ public final class Ex {
       }
     }
     /**
+     * <pre>
+     * 账户
+     * </pre>
+     *
      * <code>string account = 7;</code>
      * @return The bytes for account.
      */
@@ -546,6 +620,10 @@ public final class Ex {
     public static final int TS_NS_FIELD_NUMBER = 8;
     private long tsNs_ = 0L;
     /**
+     * <pre>
+     * ns时间戳
+     * </pre>
+     *
      * <code>int64 ts_ns = 8;</code>
      * @return The tsNs.
      */
@@ -787,6 +865,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 新订单
+     * </pre>
+     *
      * Protobuf type {@code ex.NewOrder}
      */
     public static final class Builder extends
@@ -1118,6 +1200,10 @@ public final class Ex {
 
       private java.lang.Object symbol_ = "";
       /**
+       * <pre>
+       * 交易品种代码
+       * </pre>
+       *
        * <code>string symbol = 2;</code>
        * @return The symbol.
        */
@@ -1134,6 +1220,10 @@ public final class Ex {
         }
       }
       /**
+       * <pre>
+       * 交易品种代码
+       * </pre>
+       *
        * <code>string symbol = 2;</code>
        * @return The bytes for symbol.
        */
@@ -1151,6 +1241,10 @@ public final class Ex {
         }
       }
       /**
+       * <pre>
+       * 交易品种代码
+       * </pre>
+       *
        * <code>string symbol = 2;</code>
        * @param value The symbol to set.
        * @return This builder for chaining.
@@ -1164,6 +1258,10 @@ public final class Ex {
         return this;
       }
       /**
+       * <pre>
+       * 交易品种代码
+       * </pre>
+       *
        * <code>string symbol = 2;</code>
        * @return This builder for chaining.
        */
@@ -1174,6 +1272,10 @@ public final class Ex {
         return this;
       }
       /**
+       * <pre>
+       * 交易品种代码
+       * </pre>
+       *
        * <code>string symbol = 2;</code>
        * @param value The bytes for symbol to set.
        * @return This builder for chaining.
@@ -1287,6 +1389,10 @@ public final class Ex {
 
       private long quantity_ ;
       /**
+       * <pre>
+       * 单位 按最小交易单位计量
+       * </pre>
+       *
        * <code>int64 quantity = 5;</code>
        * @return The quantity.
        */
@@ -1295,6 +1401,10 @@ public final class Ex {
         return quantity_;
       }
       /**
+       * <pre>
+       * 单位 按最小交易单位计量
+       * </pre>
+       *
        * <code>int64 quantity = 5;</code>
        * @param value The quantity to set.
        * @return This builder for chaining.
@@ -1307,6 +1417,10 @@ public final class Ex {
         return this;
       }
       /**
+       * <pre>
+       * 单位 按最小交易单位计量
+       * </pre>
+       *
        * <code>int64 quantity = 5;</code>
        * @return This builder for chaining.
        */
@@ -1372,6 +1486,10 @@ public final class Ex {
 
       private java.lang.Object account_ = "";
       /**
+       * <pre>
+       * 账户
+       * </pre>
+       *
        * <code>string account = 7;</code>
        * @return The account.
        */
@@ -1388,6 +1506,10 @@ public final class Ex {
         }
       }
       /**
+       * <pre>
+       * 账户
+       * </pre>
+       *
        * <code>string account = 7;</code>
        * @return The bytes for account.
        */
@@ -1405,6 +1527,10 @@ public final class Ex {
         }
       }
       /**
+       * <pre>
+       * 账户
+       * </pre>
+       *
        * <code>string account = 7;</code>
        * @param value The account to set.
        * @return This builder for chaining.
@@ -1418,6 +1544,10 @@ public final class Ex {
         return this;
       }
       /**
+       * <pre>
+       * 账户
+       * </pre>
+       *
        * <code>string account = 7;</code>
        * @return This builder for chaining.
        */
@@ -1428,6 +1558,10 @@ public final class Ex {
         return this;
       }
       /**
+       * <pre>
+       * 账户
+       * </pre>
+       *
        * <code>string account = 7;</code>
        * @param value The bytes for account to set.
        * @return This builder for chaining.
@@ -1444,6 +1578,10 @@ public final class Ex {
 
       private long tsNs_ ;
       /**
+       * <pre>
+       * ns时间戳
+       * </pre>
+       *
        * <code>int64 ts_ns = 8;</code>
        * @return The tsNs.
        */
@@ -1452,6 +1590,10 @@ public final class Ex {
         return tsNs_;
       }
       /**
+       * <pre>
+       * ns时间戳
+       * </pre>
+       *
        * <code>int64 ts_ns = 8;</code>
        * @param value The tsNs to set.
        * @return This builder for chaining.
@@ -1464,6 +1606,10 @@ public final class Ex {
         return this;
       }
       /**
+       * <pre>
+       * ns时间戳
+       * </pre>
+       *
        * <code>int64 ts_ns = 8;</code>
        * @return This builder for chaining.
        */
@@ -1584,6 +1730,10 @@ public final class Ex {
     long getTsNs();
   }
   /**
+   * <pre>
+   * 取消订单
+   * </pre>
+   *
    * Protobuf type {@code ex.CancelOrder}
    */
   public static final class CancelOrder extends
@@ -1938,6 +2088,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 取消订单
+     * </pre>
+     *
      * Protobuf type {@code ex.CancelOrder}
      */
     public static final class Builder extends
@@ -2487,18 +2641,40 @@ public final class Ex {
         getSymbolBytes();
 
     /**
-     * <code>int64 new_qty = 3;</code>
+     * <code>string account = 3;</code>
+     * @return The account.
+     */
+    java.lang.String getAccount();
+    /**
+     * <code>string account = 3;</code>
+     * @return The bytes for account.
+     */
+    com.google.protobuf.ByteString
+        getAccountBytes();
+
+    /**
+     * <code>int64 new_qty = 4;</code>
      * @return The newQty.
      */
     long getNewQty();
 
     /**
-     * <code>int64 ts_ns = 4;</code>
+     * <code>int64 new_price = 5;</code>
+     * @return The newPrice.
+     */
+    long getNewPrice();
+
+    /**
+     * <code>int64 ts_ns = 6;</code>
      * @return The tsNs.
      */
     long getTsNs();
   }
   /**
+   * <pre>
+   * 修改订单
+   * </pre>
+   *
    * Protobuf type {@code ex.AmendOrder}
    */
   public static final class AmendOrder extends
@@ -2513,6 +2689,7 @@ public final class Ex {
     private AmendOrder() {
       clientOrderId_ = "";
       symbol_ = "";
+      account_ = "";
     }
 
     @java.lang.Override
@@ -2613,10 +2790,49 @@ public final class Ex {
       }
     }
 
-    public static final int NEW_QTY_FIELD_NUMBER = 3;
+    public static final int ACCOUNT_FIELD_NUMBER = 3;
+    @SuppressWarnings("serial")
+    private volatile java.lang.Object account_ = "";
+    /**
+     * <code>string account = 3;</code>
+     * @return The account.
+     */
+    @java.lang.Override
+    public java.lang.String getAccount() {
+      java.lang.Object ref = account_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        account_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string account = 3;</code>
+     * @return The bytes for account.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getAccountBytes() {
+      java.lang.Object ref = account_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        account_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int NEW_QTY_FIELD_NUMBER = 4;
     private long newQty_ = 0L;
     /**
-     * <code>int64 new_qty = 3;</code>
+     * <code>int64 new_qty = 4;</code>
      * @return The newQty.
      */
     @java.lang.Override
@@ -2624,10 +2840,21 @@ public final class Ex {
       return newQty_;
     }
 
-    public static final int TS_NS_FIELD_NUMBER = 4;
+    public static final int NEW_PRICE_FIELD_NUMBER = 5;
+    private long newPrice_ = 0L;
+    /**
+     * <code>int64 new_price = 5;</code>
+     * @return The newPrice.
+     */
+    @java.lang.Override
+    public long getNewPrice() {
+      return newPrice_;
+    }
+
+    public static final int TS_NS_FIELD_NUMBER = 6;
     private long tsNs_ = 0L;
     /**
-     * <code>int64 ts_ns = 4;</code>
+     * <code>int64 ts_ns = 6;</code>
      * @return The tsNs.
      */
     @java.lang.Override
@@ -2655,11 +2882,17 @@ public final class Ex {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(symbol_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, symbol_);
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(account_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, account_);
+      }
       if (newQty_ != 0L) {
-        output.writeInt64(3, newQty_);
+        output.writeInt64(4, newQty_);
+      }
+      if (newPrice_ != 0L) {
+        output.writeInt64(5, newPrice_);
       }
       if (tsNs_ != 0L) {
-        output.writeInt64(4, tsNs_);
+        output.writeInt64(6, tsNs_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2676,13 +2909,20 @@ public final class Ex {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(symbol_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, symbol_);
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(account_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, account_);
+      }
       if (newQty_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, newQty_);
+          .computeInt64Size(4, newQty_);
+      }
+      if (newPrice_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(5, newPrice_);
       }
       if (tsNs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(4, tsNs_);
+          .computeInt64Size(6, tsNs_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSize = size;
@@ -2703,8 +2943,12 @@ public final class Ex {
           .equals(other.getClientOrderId())) return false;
       if (!getSymbol()
           .equals(other.getSymbol())) return false;
+      if (!getAccount()
+          .equals(other.getAccount())) return false;
       if (getNewQty()
           != other.getNewQty()) return false;
+      if (getNewPrice()
+          != other.getNewPrice()) return false;
       if (getTsNs()
           != other.getTsNs()) return false;
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -2722,9 +2966,14 @@ public final class Ex {
       hash = (53 * hash) + getClientOrderId().hashCode();
       hash = (37 * hash) + SYMBOL_FIELD_NUMBER;
       hash = (53 * hash) + getSymbol().hashCode();
+      hash = (37 * hash) + ACCOUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getAccount().hashCode();
       hash = (37 * hash) + NEW_QTY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getNewQty());
+      hash = (37 * hash) + NEW_PRICE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getNewPrice());
       hash = (37 * hash) + TS_NS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTsNs());
@@ -2826,6 +3075,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 修改订单
+     * </pre>
+     *
      * Protobuf type {@code ex.AmendOrder}
      */
     public static final class Builder extends
@@ -2861,7 +3114,9 @@ public final class Ex {
         bitField0_ = 0;
         clientOrderId_ = "";
         symbol_ = "";
+        account_ = "";
         newQty_ = 0L;
+        newPrice_ = 0L;
         tsNs_ = 0L;
         return this;
       }
@@ -2903,9 +3158,15 @@ public final class Ex {
           result.symbol_ = symbol_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
-          result.newQty_ = newQty_;
+          result.account_ = account_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.newQty_ = newQty_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.newPrice_ = newPrice_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
           result.tsNs_ = tsNs_;
         }
       }
@@ -2964,8 +3225,16 @@ public final class Ex {
           bitField0_ |= 0x00000002;
           onChanged();
         }
+        if (!other.getAccount().isEmpty()) {
+          account_ = other.account_;
+          bitField0_ |= 0x00000004;
+          onChanged();
+        }
         if (other.getNewQty() != 0L) {
           setNewQty(other.getNewQty());
+        }
+        if (other.getNewPrice() != 0L) {
+          setNewPrice(other.getNewPrice());
         }
         if (other.getTsNs() != 0L) {
           setTsNs(other.getTsNs());
@@ -3006,16 +3275,26 @@ public final class Ex {
                 bitField0_ |= 0x00000002;
                 break;
               } // case 18
-              case 24: {
-                newQty_ = input.readInt64();
+              case 26: {
+                account_ = input.readStringRequireUtf8();
                 bitField0_ |= 0x00000004;
                 break;
-              } // case 24
+              } // case 26
               case 32: {
-                tsNs_ = input.readInt64();
+                newQty_ = input.readInt64();
                 bitField0_ |= 0x00000008;
                 break;
               } // case 32
+              case 40: {
+                newPrice_ = input.readInt64();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              case 48: {
+                tsNs_ = input.readInt64();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 48
               default: {
                 if (!super.parseUnknownField(input, extensionRegistry, tag)) {
                   done = true; // was an endgroup tag
@@ -3177,9 +3456,81 @@ public final class Ex {
         return this;
       }
 
+      private java.lang.Object account_ = "";
+      /**
+       * <code>string account = 3;</code>
+       * @return The account.
+       */
+      public java.lang.String getAccount() {
+        java.lang.Object ref = account_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          account_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string account = 3;</code>
+       * @return The bytes for account.
+       */
+      public com.google.protobuf.ByteString
+          getAccountBytes() {
+        java.lang.Object ref = account_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          account_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string account = 3;</code>
+       * @param value The account to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAccount(
+          java.lang.String value) {
+        if (value == null) { throw new NullPointerException(); }
+        account_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string account = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAccount() {
+        account_ = getDefaultInstance().getAccount();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string account = 3;</code>
+       * @param value The bytes for account to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAccountBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) { throw new NullPointerException(); }
+        checkByteStringIsUtf8(value);
+        account_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+
       private long newQty_ ;
       /**
-       * <code>int64 new_qty = 3;</code>
+       * <code>int64 new_qty = 4;</code>
        * @return The newQty.
        */
       @java.lang.Override
@@ -3187,31 +3538,63 @@ public final class Ex {
         return newQty_;
       }
       /**
-       * <code>int64 new_qty = 3;</code>
+       * <code>int64 new_qty = 4;</code>
        * @param value The newQty to set.
        * @return This builder for chaining.
        */
       public Builder setNewQty(long value) {
 
         newQty_ = value;
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 new_qty = 3;</code>
+       * <code>int64 new_qty = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearNewQty() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000008);
         newQty_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long newPrice_ ;
+      /**
+       * <code>int64 new_price = 5;</code>
+       * @return The newPrice.
+       */
+      @java.lang.Override
+      public long getNewPrice() {
+        return newPrice_;
+      }
+      /**
+       * <code>int64 new_price = 5;</code>
+       * @param value The newPrice to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNewPrice(long value) {
+
+        newPrice_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 new_price = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNewPrice() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        newPrice_ = 0L;
         onChanged();
         return this;
       }
 
       private long tsNs_ ;
       /**
-       * <code>int64 ts_ns = 4;</code>
+       * <code>int64 ts_ns = 6;</code>
        * @return The tsNs.
        */
       @java.lang.Override
@@ -3219,23 +3602,23 @@ public final class Ex {
         return tsNs_;
       }
       /**
-       * <code>int64 ts_ns = 4;</code>
+       * <code>int64 ts_ns = 6;</code>
        * @param value The tsNs to set.
        * @return This builder for chaining.
        */
       public Builder setTsNs(long value) {
 
         tsNs_ = value;
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 ts_ns = 4;</code>
+       * <code>int64 ts_ns = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearTsNs() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000020);
         tsNs_ = 0L;
         onChanged();
         return this;
@@ -4033,6 +4416,10 @@ public final class Ex {
         getReasonBytes();
   }
   /**
+   * <pre>
+   * 风控拒绝
+   * </pre>
+   *
    * Protobuf type {@code ex.Reject}
    */
   public static final class Reject extends
@@ -4314,6 +4701,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 风控拒绝
+     * </pre>
+     *
      * Protobuf type {@code ex.Reject}
      */
     public static final class Builder extends
@@ -4769,6 +5160,10 @@ public final class Ex {
     long getTsNs();
   }
   /**
+   * <pre>
+   * 交易
+   * </pre>
+   *
    * Protobuf type {@code ex.Trade}
    */
   public static final class Trade extends
@@ -5192,6 +5587,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 交易
+     * </pre>
+     *
      * Protobuf type {@code ex.Trade}
      */
     public static final class Builder extends
@@ -5896,6 +6295,10 @@ public final class Ex {
     ex.Ex.Inbound.PayloadCase getPayloadCase();
   }
   /**
+   * <pre>
+   * 交易者 -&gt; 撮合引擎
+   * </pre>
+   *
    * Protobuf type {@code ex.Inbound}
    */
   public static final class Inbound extends
@@ -6268,6 +6671,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 交易者 -&gt; 撮合引擎
+     * </pre>
+     *
      * Protobuf type {@code ex.Inbound}
      */
     public static final class Builder extends
@@ -7046,6 +7453,10 @@ public final class Ex {
     ex.Ex.Outbound.PayloadCase getPayloadCase();
   }
   /**
+   * <pre>
+   * 撮合引擎 -&gt; 交易者
+   * </pre>
+   *
    * Protobuf type {@code ex.Outbound}
    */
   public static final class Outbound extends
@@ -7418,6 +7829,10 @@ public final class Ex {
       return builder;
     }
     /**
+     * <pre>
+     * 撮合引擎 -&gt; 交易者
+     * </pre>
+     *
      * Protobuf type {@code ex.Outbound}
      */
     public static final class Builder extends
@@ -8199,23 +8614,24 @@ public final class Ex {
       "\005 \001(\003\022\024\n\003tif\030\006 \001(\0162\007.ex.Tif\022\017\n\007account\030\007" +
       " \001(\t\022\r\n\005ts_ns\030\010 \001(\003\"V\n\013CancelOrder\022\027\n\017cl" +
       "ient_order_id\030\001 \001(\t\022\016\n\006symbol\030\002 \001(\t\022\017\n\007a" +
-      "ccount\030\003 \001(\t\022\r\n\005ts_ns\030\004 \001(\003\"U\n\nAmendOrde" +
+      "ccount\030\003 \001(\t\022\r\n\005ts_ns\030\004 \001(\003\"y\n\nAmendOrde" +
       "r\022\027\n\017client_order_id\030\001 \001(\t\022\016\n\006symbol\030\002 \001" +
-      "(\t\022\017\n\007new_qty\030\003 \001(\003\022\r\n\005ts_ns\030\004 \001(\003\"7\n\003Ac" +
-      "k\022\027\n\017client_order_id\030\001 \001(\t\022\027\n\017engine_ord" +
-      "er_id\030\002 \001(\t\"1\n\006Reject\022\027\n\017client_order_id" +
-      "\030\001 \001(\t\022\016\n\006reason\030\002 \001(\t\"\201\001\n\005Trade\022\016\n\006symb" +
-      "ol\030\001 \001(\t\022\024\n\014buy_order_id\030\002 \001(\t\022\025\n\rsell_o" +
-      "rder_id\030\003 \001(\t\022\r\n\005price\030\004 \001(\003\022\020\n\010quantity" +
-      "\030\005 \001(\003\022\013\n\003seq\030\006 \001(\003\022\r\n\005ts_ns\030\007 \001(\003\"{\n\007In" +
-      "bound\022!\n\tnew_order\030\001 \001(\0132\014.ex.NewOrderH\000" +
-      "\022!\n\006cancel\030\002 \001(\0132\017.ex.CancelOrderH\000\022\037\n\005a" +
-      "mend\030\003 \001(\0132\016.ex.AmendOrderH\000B\t\n\007payload\"" +
-      "g\n\010Outbound\022\026\n\003ack\030\001 \001(\0132\007.ex.AckH\000\022\034\n\006r" +
-      "eject\030\002 \001(\0132\n.ex.RejectH\000\022\032\n\005trade\030\003 \001(\013" +
-      "2\t.ex.TradeH\000B\t\n\007payload*\031\n\004Side\022\007\n\003BUY\020" +
-      "\000\022\010\n\004SELL\020\001* \n\003Tif\022\007\n\003GTC\020\000\022\007\n\003IOC\020\001\022\007\n\003" +
-      "FOK\020\002b\006proto3"
+      "(\t\022\017\n\007account\030\003 \001(\t\022\017\n\007new_qty\030\004 \001(\003\022\021\n\t" +
+      "new_price\030\005 \001(\003\022\r\n\005ts_ns\030\006 \001(\003\"7\n\003Ack\022\027\n" +
+      "\017client_order_id\030\001 \001(\t\022\027\n\017engine_order_i" +
+      "d\030\002 \001(\t\"1\n\006Reject\022\027\n\017client_order_id\030\001 \001" +
+      "(\t\022\016\n\006reason\030\002 \001(\t\"\201\001\n\005Trade\022\016\n\006symbol\030\001" +
+      " \001(\t\022\024\n\014buy_order_id\030\002 \001(\t\022\025\n\rsell_order" +
+      "_id\030\003 \001(\t\022\r\n\005price\030\004 \001(\003\022\020\n\010quantity\030\005 \001" +
+      "(\003\022\013\n\003seq\030\006 \001(\003\022\r\n\005ts_ns\030\007 \001(\003\"{\n\007Inboun" +
+      "d\022!\n\tnew_order\030\001 \001(\0132\014.ex.NewOrderH\000\022!\n\006" +
+      "cancel\030\002 \001(\0132\017.ex.CancelOrderH\000\022\037\n\005amend" +
+      "\030\003 \001(\0132\016.ex.AmendOrderH\000B\t\n\007payload\"g\n\010O" +
+      "utbound\022\026\n\003ack\030\001 \001(\0132\007.ex.AckH\000\022\034\n\006rejec" +
+      "t\030\002 \001(\0132\n.ex.RejectH\000\022\032\n\005trade\030\003 \001(\0132\t.e" +
+      "x.TradeH\000B\t\n\007payload*\031\n\004Side\022\007\n\003BUY\020\000\022\010\n" +
+      "\004SELL\020\001* \n\003Tif\022\007\n\003GTC\020\000\022\007\n\003IOC\020\001\022\007\n\003FOK\020" +
+      "\002b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -8238,7 +8654,7 @@ public final class Ex {
     internal_static_ex_AmendOrder_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ex_AmendOrder_descriptor,
-        new java.lang.String[] { "ClientOrderId", "Symbol", "NewQty", "TsNs", });
+        new java.lang.String[] { "ClientOrderId", "Symbol", "Account", "NewQty", "NewPrice", "TsNs", });
     internal_static_ex_Ack_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_ex_Ack_fieldAccessorTable = new
